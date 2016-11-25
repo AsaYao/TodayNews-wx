@@ -1,0 +1,46 @@
+<template name="topview">
+    <text> {{item.imagename}} </text>
+    <image src="{{item.imagesrc}}" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+</template>
+
+<view class="main">
+    <view class="topview">
+    <view class="imageContainer">
+        <image class="images" src="../../imges/mine/weixinicon_login_profile_78x78_.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+        <image class="images" src="../../imges/mine/qqicon_login_profile_78x78_@2x.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+        <image class="images" src="../../imges/mine/sinaicon_login_profile_78x78_@2x.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+        <image class="images" src="../../imges/mine/cellphoneicon_login_profile_78x78_@2x.png" mode="aspectFit" style="width: 60px; height: 60px; background-color: transparent;"></image>
+    </view>
+    <button class="morebutton">更多登录方式 ></button>
+    </view>
+    <view class="bottomview">
+        <scroll-view scroll-y="true">
+            <view class="btopview">
+                 <view class="columnset">
+                 <image  src="../../imges/mine/nighticon_profile_24x24_@2x.png" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+                 <text> 收藏 </text>
+                 </view>
+
+                 <view class="columnset">
+                 <image src="../../imges/mine/nighticon_profile_24x24_@2x.png" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+                 <text> 夜间 </text>
+                 </view>
+
+                  <view class="columnset">
+                 <image  src="../../imges/mine/nighticon_profile_24x24_@2x.png" mode="aspectFit" style="width: 30px; height: 30px; background-color: transparent;"></image>
+                 <text> 设置 </text>
+                 </view> 
+            </view>
+
+            <view class="bmiddelview">
+                <template is="topview" data="{{item:item}}"/>
+            </view>
+         
+        <block wx:for="{{celldata}}"  wx:for-item="celldata">
+            <view class="bbottomview">
+                <template is="topview" data="{{item:celldata}}"/>
+            </view>
+        </block>
+        </scroll-view>
+    </view>
+</view>

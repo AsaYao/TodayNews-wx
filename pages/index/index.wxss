@@ -1,0 +1,125 @@
+/**index.wxss**/
+/*@import "../common/common.wxss";*/
+.mainView {
+    width: 100%;
+}
+.topTabBar {
+    background-color: #d75b5d;
+    width: 100%;
+    height: 88rpx;
+    display: flex;
+    flex-direction: row;
+}
+.leftView {
+    height: 100%;
+    width: 90%;
+    position: relative;
+}
+.rightview {
+    background-color: transparent;
+    height: 100%;
+    width: 10%;
+    position: relative;
+}
+
+.tpbottomView {
+    position: absolute;
+    background-color: #d75b5d;
+    width: 100%;
+    height: 18rpx;
+    bottom: 0;
+    z-index: 96;
+}
+
+.tpscview {
+    width: 100%;
+    height: 100%;
+    font-size: 40rpx;
+    font-family: initial;
+    font-weight: lighter;
+    display: flex;
+    white-space: nowrap;
+}
+
+.topdatalist {
+  display:inline-block;
+  margin-top: 12rpx;
+  color: white;
+  margin-left: 10rpx;
+  width: 100rpx;
+  height: 100%;
+  text-align: center;
+  z-index: 99;
+}
+
+.curPage {
+     animation:myfirst 0.1s;
+     animation-fill-mode:forwards;
+}
+
+@keyframes myfirst
+{
+	to {
+       font-size: 50rpx;
+    }
+}
+
+.addImage {
+    position: absolute;
+    width: 40rpx;
+    height: 40rpx;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.bottomView {
+    width: 100%;
+    height: 100%;
+    font-size: 40rpx;
+    font-family: initial;
+    font-weight: lighter;
+    display: flex;
+    white-space: nowrap;
+}
+
+.subView {
+    background-color: f0f0f0;
+    width: 100%;
+    display:inline-block;
+    height: 1052rpx;
+}
+
+.detailCell {
+    width: 100%;
+    box-sizing:  border-box;
+    padding:20rpx;
+    background: white;
+    border-bottom: 1rpx solid darkgray;
+}
+
+.cellbottom {
+    width: 100%;
+    height: 44rpx;
+    background-color: transparent;
+    color: #dddddd;
+    font-size: 30rpx;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+
+.imageContainer {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    height: 150rpx;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+.imageshow {
+    width: 230rpx;
+    height: 150rpx;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "todaynews",
+  "version": "1.0.0",
+  "description": "today-news",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-polyfill": "^6.16.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6"
+  }
+}
